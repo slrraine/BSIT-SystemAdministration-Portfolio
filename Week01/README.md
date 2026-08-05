@@ -45,7 +45,9 @@
 
 ---
 # Reflection
-This week's activity laid the foundation for a robust system administration workspace. By configuring these essential tools—such as Git for version control, VirtualBox for virtualization, and a code editor—I have prepared an environment capable of handling complex administrative tasks and testing configurations safely. Version control will ensure my work is systematically tracked and backed up. Additionally, creating professional profiles on GitHub and LinkedIn helps me establish my digital footprint, connecting my hands-on practice with the broader IT community. These initial steps are crucial for my development as a future System Administrator because they instill the best practices of organization, continuous learning, and professional documentation right from the start.
+This week's activities helped me build a solid foundation for my system administration workspace. By setting up essential tools like Git for version control, VirtualBox for virtualization, and a code editor, I now have an environment where I can safely test configurations and manage projects more efficiently. Using Git will also help me keep track of changes and maintain organized backups of my work.
+
+Creating my GitHub and LinkedIn profiles was another important step because it allows me to document my progress, showcase my projects, and connect with other IT professionals. Overall, these activities gave me the tools and habits I need to grow as a future System Administrator, while emphasizing the importance of organization, continuous learning, and proper documentation from the very beginning.
 
 ---
 # References
