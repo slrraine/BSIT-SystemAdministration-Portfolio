@@ -1,8 +1,8 @@
 # Week 1 – Building My Professional Environment
 ## Student Information
-- Name: Mark Andrew Z. Soliman
+- Name: Mark Andrew
 - Course: BSIT
-- Section: BSIT - 4A
+- Section: BSIT-1A
 - Date: August 5, 2026
 
 # Objectives
@@ -26,7 +26,7 @@
 ---
 # Professional Accounts
 - GitHub: https://github.com/mrkndrwslmn
-- LinkedIn: https://www.linkedin.com/in/markandrewsoliman/
+- LinkedIn: https://linkedin.com/in/mark-andrew
 
 ---
 # Installation Screenshots
@@ -39,9 +39,9 @@
 
 ---
 # Challenges Encountered
-1. **[Challenge 1]**: [How you solved it]
-2. **[Challenge 2]**: [How you solved it]
-3. **[Challenge 3]**: [How you solved it]
+1. **GitHub Repository Creation**: Initially had trouble pushing the local repository to GitHub because the remote origin URL was incorrect, causing an error. I solved this by using the `git remote set-url origin` command to update the URL and then forcing the push with `git push -u origin main --force`.
+2. **VirtualBox Installation Error**: Winget threw an "exit code: 1" error due to VirtualBox requiring a manual agreement for network interfaces. I solved this by manually downloading the VirtualBox Windows hosts installer from their official website and installing it directly.
+3. **Storage Space Limitations**: I was running low on storage with only 5GB remaining. I resolved this by clearing my temporary files, emptying the Recycle Bin, and clearing the NPM cache via the command line, reclaiming over 4GB of space.
 
 ---
 # Reflection
