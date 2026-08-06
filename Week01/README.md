@@ -1,6 +1,6 @@
 # Week 1 – Building My Professional Environment
 ## Student Information
-- Name: Mark Andrew
+- Name: Mark Andrew Z. Soliman
 - Course: BSIT
 - Section: BSIT-1A
 - Date: August 5, 2026
@@ -21,12 +21,11 @@
 - VirtualBox
 - Ubuntu Desktop/Server ISO
 - Windows 11 Enterprise Evaluation ISO
-- Google Chrome / Microsoft Edge
 
 ---
 # Professional Accounts
 - GitHub: https://github.com/mrkndrwslmn
-- LinkedIn: https://linkedin.com/in/mark-andrew
+- LinkedIn: https://www.linkedin.com/in/markandrewsoliman/
 
 ---
 # Installation Screenshots
