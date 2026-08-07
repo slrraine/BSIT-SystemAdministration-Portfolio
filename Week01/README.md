@@ -3,7 +3,6 @@
 - Name: Sofia Lorraine Gonzaga
 - Course: BSIT
 - Section: BSIT-4A
-- Date: August 5, 2026
 - Date: August 7, 2026
 
 # Objectives
@@ -39,15 +38,26 @@
 
 ---
 # Challenges Encountered
-1. **GitHub Repository Creation**: Initially had trouble pushing the local repository to GitHub because the remote origin URL was incorrect, causing an error. I solved this by using the `git remote set-url origin` command to update the URL and then forcing the push with `git push -u origin main --force`.
-2. **VirtualBox Installation Error**: Winget threw an "exit code: 1" error due to VirtualBox requiring a manual agreement for network interfaces. I solved this by manually downloading the VirtualBox Windows hosts installer from their official website and installing it directly.
-3. **Storage Space Limitations**: I was running low on storage with only 5GB remaining. I resolved this by clearing my temporary files, emptying the Recycle Bin, and clearing the NPM cache via the command line, reclaiming over 4GB of space.
 
+1. **GitHub Repository Creation**
+   * Facing initial issues pushing local commits due to incorrect remote origin URLs and authorization setups. 
+   * Resolved by verifying SSH/HTTPS credentials and explicitly updating the remote URL using `git remote set-url origin <URL>`.
+
+2. **VirtualBox Installation Error**
+   * Encountered setup blockages caused by missing dependencies (such as Microsoft Visual C++ Redistributable packages) or temporary system virtualization conflict warnings.
+   * Solved by installing the missing runtime components, enabling Hardware Virtualization (VT-x/AMD-V) in BIOS, and running the installer as Administrator.
+
+3. **Storage Space Limitations**
+   * Insufficient disk space on the primary drive when downloading large OS images like Ubuntu Desktop/Server ISOs and Windows 11 Enterprise ISOs.
+   * Resolved by clearing system temporary files, removing redundant installer files, and managing storage allocation to ensure enough room for virtual machine creation.
 ---
 # Reflection
-This week's activities helped me build a solid foundation for my system administration workspace. By setting up essential tools like Git for version control, VirtualBox for virtualization, and a code editor, I now have an environment where I can safely test configurations and manage projects more efficiently. Using Git will also help me keep track of changes and maintain organized backups of my work.
 
-Creating my GitHub and LinkedIn profiles was another important step because it allows me to document my progress, showcase my projects, and connect with other IT professionals. Overall, these activities gave me the tools and habits I need to grow as a future System Administrator, while emphasizing the importance of organization, continuous learning, and proper documentation from the very beginning.
+Setting up the local development environment and completing the Week 1 activity provided valuable hands-on experience in configuring essential tools for software development and system administration.
+
+Through configuring **Git** and **GitHub Desktop**, I gained a clearer understanding of version control workflows, repository management, and the importance of precise command syntax when setting up global configurations. Working with **Visual Studio Code** reinforced the value of clean documentation using Markdown, especially when managing file paths and linking project assets like screenshots. Additionally, setting up **VirtualBox** and downloading system ISO images (Ubuntu and Windows 11) laid the groundwork for future tasks involving virtual machines, operating system deployments, and environment isolation.
+
+Overall, overcoming setup errors and troubleshooting configuration challenges built my technical confidence, highlighting the importance of attention to detail and structured problem-solving in system administration.
 
 ---
 # References
