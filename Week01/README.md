@@ -1,8 +1,8 @@
 # Week 1 – Building My Professional Environment
 ## Student Information
-- Name: Mark Andrew Z. Soliman
+- Name: Sofia Lorraine Gonzaga
 - Course: BSIT
-- Section: BSIT-1A
+- Section: BSIT-4A
 - Date: August 5, 2026
 
 # Objectives
@@ -24,8 +24,8 @@
 
 ---
 # Professional Accounts
-- GitHub: https://github.com/mrkndrwslmn
-- LinkedIn: https://www.linkedin.com/in/markandrewsoliman/
+- GitHub: https://github.com/slrraine
+- LinkedIn: https://www.linkedin.com/in/piagonzaga/
 
 ---
 # Installation Screenshots
