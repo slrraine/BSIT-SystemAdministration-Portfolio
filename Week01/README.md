@@ -4,6 +4,7 @@
 - Course: BSIT
 - Section: BSIT-4A
 - Date: August 5, 2026
+- Date: August 7, 2026
 
 # Objectives
 - To install all required software development and virtualization tools.
@@ -30,11 +31,11 @@
 ---
 # Installation Screenshots
 ![Git Screenshot](screenshots/git.png)
-![GitHub Desktop Screenshot](screenshots/github-desktop.png)
-![VS Code Screenshot](screenshots/vscode.png)
-![VirtualBox Screenshot](screenshots/virtualbox.png)
-![Ubuntu ISO Screenshot](screenshots/ubuntu.png)
-![Windows ISO Screenshot](screenshots/windows.png)
+![GitHub Desktop Screenshot](screenshots/GitHub%20Desktop.png)
+![VS Code Screenshot](screenshots/Vscode.png)
+![VirtualBox Screenshot](screenshots/VirtualBox.png)
+![Ubuntu ISO Screenshot](screenshots//Ubuntu.png)
+![Windows ISO Screenshot](screenshots/windowsiso.png)
 
 ---
 # Challenges Encountered
