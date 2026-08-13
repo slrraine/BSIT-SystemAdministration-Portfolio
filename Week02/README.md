@@ -90,58 +90,6 @@ Suite 502, 5th Floor, Innovation Tech Tower, Barangay San Rafael, San Pablo City
 
 ---
 
-# Enterprise Hardware Inventory
-
-| Asset ID | Hardware | Quantity | Department | Purpose |
-| :--- | :--- | :--- | :--- | :--- |
-| **HW-DEV-01 to 05** | Developer Desktop Computer | 5 | Information Technology | High-performance workstation (Core i7 / 32GB RAM) for coding, compilation, and dockerized test environments. |
-| **HW-OFF-01 to 09** | Office Standard Desktop | 9 | HR (4), Finance (5) | Standard workstation (Core i5 / 16GB RAM) for accounting software, HR management, and document processing. |
-| **HW-LAP-01 to 06** | Business Laptop | 6 | Sales | Portable ultrabook (Core i5 / 16GB RAM) for sales presentations, client visits, and remote communications. |
-| **HW-SRV-01** | Rackmount Server | 1 | Shared (IT Core) | On-premise server (Intel Xeon / 64GB RAM) hosting local Active Directory, DNS, local git repositories, and databases. |
-| **HW-RTR-01** | Enterprise Router | 1 | IT / Network Rack | Manages high-speed routing between external ISPs, internal subnets, and local network gateways. |
-| **HW-SWT-01** | 48-Port Managed Switch | 1 | IT / Network Rack | Delivers high-speed wired Ethernet connectivity and VLAN isolation across all office departments. |
-| **HW-PRN-01 to 02** | Multifunction Network Printer | 2 | Shared (HR / Finance) | Network-attached laser printer/scanner for heavy office documentation, contracts, and financial reporting. |
-| **HW-UPS-01 to 03** | Smart UPS Battery Backup | 3 | Server / Network Rack | Provides clean power filtering and battery runtime to prevent data loss during unexpected power outages. |
-| **HW-WAP-01 to 02** | Wireless Access Point | 2 | Office Floor | Provides encrypted Wi-Fi 6 wireless coverage across the floor for laptops, mobile devices, and guests. |
-| **HW-NAS-01** | NAS Storage Device | 1 | IT / Network Rack | 4-bay high-capacity storage array for centralized local data retention and daily incremental backups. |
-| **HW-EXT-01 to 02** | External Backup Drive | 2 | IT Department | Portable 4TB encrypted external hard drives used for physical offsite backup rotation schemes. |
-| **HW-MON-01 to 25** | 27-inch FHD Monitor | 25 | All Departments | Dual-monitor setups for IT/Finance and single display setups for HR/Sales standard workstations. |
-
----
-
-# Enterprise Software Inventory
-
-| Software | Version | License | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Windows 11 Pro** | 23H2 | Commercial Volume | Client operating system required for domain joining, BitLocker encryption, and Active Directory group management. |
-| **Ubuntu Server** | 24.04 LTS | Open Source (Free) | Stable Linux operating system for hosting staging servers, internal databases, and developer pipelines. |
-| **Microsoft Office / Microsoft 365** | Business Premium | Commercial Subscription | Core office productivity tools (Word, Excel, PowerPoint) and cloud service connectivity (Teams, Exchange email). |
-| **VS Code** | Latest | Open Source (Free) | Primary lightweight Integrated Development Environment (IDE) utilized by developers for software programming. |
-| **Git** | 2.x | Open Source (Free) | Distributed version control system tracking local software source code updates across developer workstations. |
-| **GitHub Desktop** | Latest | Open Source (Free) | Graphical user interface facilitating visual version control operations and repository synchronization. |
-| **VirtualBox** | 7.x | Open Source (GPL v3) | Hypervisor software for creating isolated virtual environments to test system updates and multi-OS scenarios safely. |
-| **Google Chrome** | Latest | Freeware | Enterprise-managed web browser used across all departments for SaaS applications and general research. |
-| **Microsoft Defender** | Enterprise | Included with OS / M365 | Integrated endpoint security suite providing real-time malware protection, system scans, and firewall controls. |
-| **AnyDesk** | Professional | Commercial License | Secure remote desktop administration utility for IT staff to troubleshoot remote employee issues. |
-| **7-Zip** | 24.x | Open Source (GNU LGPL) | Archival tool for compressing files, reducing attachment sizes, and securing archives with AES-256 encryption. |
-
----
-
-# Enterprise Network Inventory
-
-| Equipment Name | Quantity | Specifications / Standards | Purpose |
-| :--- | :--- | :--- | :--- |
-| **ISP Fiber Modem** | 1 | GPON Optical Network Terminal | Connects the company directly to the Internet Service Provider's fiber network backbone. |
-| **Enterprise Router** | 1 | Gigabit WAN/LAN, NAT, Stateful DHCP | Performs core IP routing, DHCP lease generation, and WAN connection management. |
-| **Hardware Firewall** | 1 | Next-Generation Firewall (NGFW) | Provides perimeter inspection, intrusion detection, packet filtering, and corporate VPN termination. |
-| **48-Port Managed Switch** | 1 | Layer 2/3 Managed, 802.1Q VLAN | Connects all wired clients, segmenting department traffic logically via distinct VLANs. |
-| **Wireless Access Point (AP)** | 2 | Wi-Fi 6 (802.11ax), Ceiling Mount | Delivers high-speed encrypted wireless coverage throughout the single office layout. |
-| **24-Port Patch Panel** | 2 | Cat6 Unshielded 1U Rackmount | Terminates structured Ethernet cabling originating from office wall drops into the server rack. |
-| **CAT6 Cables** | 1000 ft | Category 6 UTP Solid Copper 23AWG | Backbone cabling infrastructure supplying high-speed gigabit throughput across the office. |
-| **RJ45 Connectors** | 100 pcs | Cat6 Pass-Through Modular Plugs | Crimp connectors used to terminate CAT6 ethernet cabling drops and custom patch leads. |
-
----
-
 # Enterprise Network Diagram
 
 The network topology utilizes a structured edge-to-access layer architecture. Incoming internet traffic enters through the ISP Modem, passes through the Enterprise Router and Hardware Firewall, and flows into a central 48-port managed switch. The switch routes traffic to isolated departmental VLANs, server infrastructure, and network access points.
