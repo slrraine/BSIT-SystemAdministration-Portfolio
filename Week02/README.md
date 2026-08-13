@@ -18,14 +18,13 @@ The proposed infrastructure was designed for **ABC Startup Solutions**, a fictio
 
 # Learning Objectives
 
-* Analyze the foundational IT requirements of a small enterprise software startup.
-* Formulate itemized inventories for hardware, software, and networking assets with realistic specifications.
-* Establish structured asset tracking mechanisms using standardized Markdown tables.
-* Design an enterprise network topology using standard diagramming symbols and logical segmentation.
-* Understand key System Administration roles, common tools, industry certifications, and cross-functional operational workflows.
-* Develop actionable infrastructure recommendations spanning ISP redundancy, network security, backup strategies, and physical expansion.
-* Practice professional technical documentation and version control utilizing GitHub Markdown formats.
+Upon completion of this enterprise infrastructure planning activity, the student will be able to:
 
+* **Assess Enterprise Technical Requirements:** Analyze hardware, software, and networking requirements to support a 20-employee software startup across four operational departments.
+* **Architect a Secure Network Topology:** Design a professional network diagram using Draw.io featuring perimeter defense, enterprise routing, core switching, and wireless integration.
+* **Formulate Enterprise Asset Inventories:** Develop structured, itemized inventory lists for hardware components, software licenses, and network equipment using standardized Markdown tables.
+* **Delineate System Administration Operations:** Map core IT administration roles—Helpdesk, Network, Linux, and Cloud—to specific responsibilities, toolsets, certifications, and cross-functional workflows.
+* **Establish Disaster Recovery & Security Policies:** Develop a multi-tiered 3-2-1 backup scheme, dual-ISP redundancy, password governance, and physical expansion strategies.
 ---
 
 # Company Scenario
