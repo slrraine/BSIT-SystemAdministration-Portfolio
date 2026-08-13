@@ -8,6 +8,10 @@
 * **Date:** August 13, 2026
 
 ---
+# Project Scenario
+
+You have recently been hired as the **Junior System Administrator** of **ABC Startup Solutions**, a newly established software development company. The company currently has **20 employees** and occupies a single office floor. 
+Management has requested that you prepare a complete **IT Infrastructure Plan** before purchasing any equipment.
 
 # Project Overview
 
@@ -142,147 +146,53 @@ Suite 502, 5th Floor, Innovation Tech Tower, Barangay San Rafael, San Pablo City
 
 The network topology utilizes a structured edge-to-access layer architecture. Incoming internet traffic enters through the ISP Modem, passes through the Enterprise Router and Hardware Firewall, and flows into a central 48-port managed switch. The switch routes traffic to isolated departmental VLANs, server infrastructure, and network access points.
 
-System Administration Roles
+The professional hierarchical enterprise network topology was designed for **ABC Startup Solutions**. The architectural layout secures external edge connectivity before distributing network traffic to the core switch layer and individual departmental endpoints.
 
-### 1. Helpdesk Technician
-
-* **Responsibilities:**
-  * Serves as the primary Tier 1/Tier 2 point of contact for internal staff reporting hardware, software, network, or account issues.
-  * Logs, categorizes, prioritizes, and resolves incoming service tickets within target Service Level Agreements (SLAs).
-  * Provisions, configures, and deploys workstation hardware, peripherals, operating systems, and client software.
-  * Manages user access lifecycle operations, including onboarding, offboarding, group policy adjustments, and password resets.
-  * Escalates specialized hardware failures, infrastructure outages, or security threats to Tier 3 administrators.
-
-* **Skills:**
-  * Operating system diagnostics across Windows 11, Linux distributions, and macOS.
-  * Desktop hardware maintenance, component replacement, and peripheral troubleshooting.
-  * Active listening, customer service skills, and non-technical communication.
-  * Fundamental networking knowledge (TCP/IP, DHCP, DNS, wireless configuration).
-
-* **Common Tools:**
-  * **Ticketing & ITSM:** Jira Service Management, Freshdesk, Zendesk.
-  * **Remote Desktop Utility:** AnyDesk, TeamViewer, Windows Remote Desktop (RDP).
-  * **Directory Services:** Microsoft Active Directory, Microsoft 365 Admin Center, Microsoft Intune.
-  * **System Diagnostics:** Windows Sysinternals, Command Prompt / PowerShell network tools (`ping`, `ipconfig`, `tracert`).
-
-* **Certifications:**
-  * **CompTIA A+**
-  * **Microsoft Certified: Modern Desktop Administrator Associate** (MD-102)
-  * **ITIL 4 Foundation**
-
+![Enterprise Network Topology Diagram](diagrams/network-topology.png "ABC Startup Solutions - Enterprise Network Topology")
 ---
 
-### 2. Network Administrator
+# Technical Stack & Portfolio Overview
 
-* **Responsibilities:**
-  * Configures, deploys, and maintains enterprise routers, managed switches, hardware firewalls, and wireless access points.
-  * Manages IP addressing, subnetting schemes, and 802.1Q VLAN configurations to isolate departmental network traffic.
-  * Monitors network health, bandwidth utilization, packet latency, and uptime using SNMP monitoring platforms.
-  * Establishes and manages site-to-site and client-based Virtual Private Network (VPN) tunnels for secure remote operations.
-  * Enforces perimeter security rules, access control lists (ACLs), firewall policies, and firmware maintenance.
+<details>
+<summary><b>🛠️ Technologies & Tools Used</b></summary>
 
-* **Skills:**
-  * Expertise in routing protocols (OSPF, BGP) and switching technologies (VLAN trunking, Spanning Tree Protocol).
-  * Hands-on proficiency with firewall configuration, NAT/PAT, and intrusion detection system (IDS/IPS) management.
-  * Deep understanding of OSI layers, packet header analysis, and network security standards.
-  * Structured cabling management, patch panel termination, and hardware rack organization.
+### **Hardware Infrastructure**
+* **Workstations & Laptops:** Intel Core i7 / i5 Systems, Business Class Ultrabooks
+* **Server & Storage:** Intel Xeon Rackmount Server, 4-Bay NAS Array, Encrypted External Drives
+* **Networking Equipment:** GPON Fiber Modem, Enterprise Gigabit Router, Next-Generation Firewall (NGFW), 48-Port Managed Switch (802.1Q VLAN), Wi-Fi 6 Access Points (802.11ax)
+* **Power & Cabling:** Smart UPS Battery Backups, Cat6 UTP Cabling, 24-Port Patch Panels
 
-* **Common Tools:**
-  * **Packet & Traffic Analysis:** Wireshark, tcpdump.
-  * **Simulation & Lab Tools:** Cisco Packet Tracer, GNS3, EVE-NG.
-  * **Network Monitoring:** SolarWinds Network Performance Monitor, PRTG, Zabbix.
-  * **Terminal & Configuration:** PuTTY, Tera Term, SecureCRT.
+### **Software & Operating Systems**
+* **Operating Systems:** Windows 11 Pro, Ubuntu Server 24.04 LTS
+* **Productivity & Communication:** Microsoft 365 Business Premium, Google Chrome
+* **Development & Virtualization:** VS Code, Git, GitHub Desktop, Oracle VirtualBox
+* **Security & System Utilities:** Microsoft Defender Enterprise, AnyDesk Professional, 7-Zip
 
-* **Certifications:**
-  * **Cisco Certified Network Associate (CCNA)**
-  * **CompTIA Network+**
-  * **Juniper Networks Certified Associate - Junos (JNCIA-Junos)**
+### **Diagramming & Documentation**
+* **Diagramming Tool:** Draw.io (diagrams.net)
+* **Documentation Standard:** GitHub Flavored Markdown (GFM)
+</details>
 
----
 
-### 3. Linux System Administrator
+<details>
+<summary><b>⚠️ Challenges Encountered & Solutions</b></summary>
 
-* **Responsibilities:**
-  * Provisions, updates, and maintains Linux-based server infrastructure (e.g., Ubuntu Server, RHEL).
-  * Configures web servers (Nginx/Apache), database systems (MySQL/PostgreSQL), and container runtimes (Docker).
-  * Writes and maintains shell scripts to automate system maintenance, routine backup routines, and log rotations.
-  * Enforces system security standards, SSH key management, user file permissions, and software security patches.
-  * Monitors system performance metrics (CPU, RAM usage, storage I/O) to prevent service downtime.
+### 1. **Balancing Budget Constraints with High Hardware Demands**
+* **Challenge:** Software development workloads (compilation, running Docker containers) require heavy compute specs, but startup budgets are tight.
+* **Solution:** Implemented role-based hardware tiering—allocating high-performance Core i7/32GB RAM desktops exclusively to developers while standardizing Core i5/16GB setups for HR, Finance, and Sales.
 
-* **Skills:**
-  * Command-line interface (CLI) mastery and shell scripting (Bash, Python).
-  * Advanced Linux file system hierarchy, privilege management (`sudo`, POSIX/ACLs), and process management.
-  * Containerization technologies and basic configuration management tools.
-  * System logging and kernel-level troubleshooting.
+### 2. **Ensuring Network Security in an Open Office Environment**
+* **Challenge:** Preventing unauthorized traffic between departments (e.g., Sales or Guest Wi-Fi access reaching sensitive Finance and HR records).
+* **Solution:** Designed a network topology centered around managed switch 802.1Q VLAN segmentation, backed by Next-Generation Firewall rules to strictly isolate traffic across departmental zones.
 
-* **Common Tools:**
-  * **Remote Shell & Utilities:** OpenSSH, tmux, htop, Netdata.
-  * **Automation & Orchestration:** Ansible, Docker, Systemd, Cron.
-  * **Web & Database Services:** Nginx, Apache, MySQL, PostgreSQL.
+### 3. **Designing for Business Continuity on a Single Floor**
+* **Challenge:** Protecting local source code repositories and corporate data against sudden power failures, local hardware failures, or catastrophic data loss.
+* **Solution:** Formulated a complete 3-2-1 backup strategy incorporating local RAID NAS storage, physical encrypted offsite hard drives, and cloud backups, backed by rackmount UPS battery systems to handle power outages gracefully.
 
-* **Certifications:**
-  * **Red Hat Certified System Administrator (RHCSA)**
-  * **Linux Foundation Certified System Administrator (LFCS)**
-  * **CompTIA Linux+**
-
----
-
-### 4. Cloud Administrator
-
-* **Responsibilities:**
-  * Deploys, configures, and oversees cloud environments (AWS, Azure, Google Cloud Platform).
-  * Configures identity access, policies, and privileges using Identity and Access Management (IAM).
-  * Monitors cloud expenditure, optimizes resource allocation, and sets up automated billing alerts.
-  * Implements automated cloud backup policies, storage lifecycle management, and disaster recovery architectures.
-  * Ensures cloud infrastructure aligns with enterprise cybersecurity compliance frameworks.
-
-* **Skills:**
-  * Deep understanding of cloud service models (IaaS, PaaS, SaaS) and serverless architectures.
-  * Infrastructure as Code (IaC) provisioning and configuration.
-  * Cloud network design (Virtual Private Clouds, Security Groups, Load Balancers).
-  * Cloud monitoring, logging, and cost optimization.
-
-* **Common Tools:**
-  * **Cloud Portals:** AWS Management Console, Microsoft Azure Portal.
-  * **Infrastructure as Code:** Terraform, AWS CloudFormation.
-  * **CLI & Monitoring:** AWS CLI, Azure CLI, Amazon CloudWatch, Azure Monitor.
-
-* **Certifications:**
-  * **AWS Certified SysOps Administrator – Associate**
-  * **Microsoft Certified: Azure Administrator Associate** (AZ-104)
-
----
-Infrastructure Recommendations
-
-### Internet Provider
-* **Recommendation:** Primary connection with PLDT Enterprise Fiber (500 Mbps) backed up by a secondary Converge ICT Business Fiber line (200 Mbps).
-* **Justification:** Software development demands uninterrupted network availability for cloud commits and client communication. Dual ISPs connected to a router with automatic failover prevent complete outages.
-
-### Server Specifications
-* **Recommendation:** Dell PowerEdge R450 Rack Server (Intel Xeon Silver 4310, 64GB DDR4 ECC RAM, 4x 1.2TB SAS HDDs in RAID 10 configuration, Dual Hot-Plug Power Supplies).
-* **Justification:** RAID 10 yields optimal drive performance and data redundancy. ECC RAM protects against memory-level corruptions, and dual power supplies safeguard against hardware power failures.
-
-### Backup Strategy
-* **Recommendation:** Implementation of the **3-2-1 Backup Strategy**.
-* **Justification:** Three copies of data are maintained across two media types (on-premise server RAID and local Synology NAS), with one copy stored offsite using encrypted cloud backups (AWS S3 Glacier).
-
-### Security Recommendations
-* **Recommendation:** Implement Role-Based Access Control (RBAC), multi-factor authentication (MFA) on all domain accounts, and VLAN isolation between internal departments and guest Wi-Fi.
-* **Justification:** Segregating network access prevents lateral movement across subnets if a workstation is compromised.
-
-### Antivirus
-* **Recommendation:** Centralized deployment of Microsoft Defender for Business managed through Microsoft Intune.
-* **Justification:** Offers native operating system integration, low host performance overhead, real-time threat prevention, and single-pane administrative monitoring.
-
-### Password Policy
-* **Recommendation:** Enforce 12-character minimum passwords containing uppercase, lowercase, numbers, and symbols; require 90-day rotations; enforce MFA globally; block standard password dictionaries.
-* **Justification:** Mitigates risk from brute-force attempts and credential-stuffing exploits.
-
-### Expansion Plan
-* **Recommendation:** Install 48-port switch and patch panel infrastructure with ~50% spare port capacity; utilize standardized cable management in server racks; adopt cloud-scalable deployment architectures.
-* **Justification:** Allows the organization to double its physical headcount on the current floor without requiring complete network hardware replacement.
-
----
+### 4. **Planning Physical Cable Layout and Port Scalability**
+* **Challenge:** Designing a patch panel and switch arrangement that meets current office needs without becoming obsolete when the startup expands.
+* **Solution:** Deployed a 48-port managed switch and 24-port patch panel setup with approximately 50% unused port capacity, allowing the company to double headcount on the same floor without replacing core network switches.
+</details>
 
 # PART 8: Personal Reflection
 
@@ -291,5 +201,16 @@ Designing the enterprise network topology was one of the most practical learning
 Overall, this activity demonstrated the absolute necessity of detailed technical documentation prior to physical deployment. Developing a structured infrastructure roadmap upfront prevents costly procurement mistakes, streamlines system installation, minimizes security risks, and establishes an expandable foundation for scalable software startup operations.
 
 ---
+# References
 
+* **Amazon Web Services.** (n.d.). *AWS Cloud Architecture Center*. Amazon Web Services, Inc. Retrieved August 13, 2026, from https://aws.amazon.com/architecture/
+* **Cisco Systems.** (2023). *Small and Medium Business Network Design Guide*. Cisco Systems, Inc. https://www.cisco.com/c/en/us/solutions/small-business/networking.html
+* **CompTIA.** (2024). *CompTIA Network+ N10-008 & Security+ SY0-701 Certification Roadmap*. CompTIA Properties, LLC. https://www.comptia.org/
+* **Cybersecurity and Infrastructure Security Agency.** (2023). *Capacity Enhancement Guide: Vol. 1 - Enterprise Backup Strategies (3-2-1 Rule)*. CISA. https://www.cisa.gov/resources-tools/guides
+* **Dell Technologies.** (2024). *Dell PowerEdge R450 Rack Server Spec Sheet*. Dell Inc. https://www.dell.com/en-us/shop/povw/poweredge-r450
+* **Diagrams.net.** (n.d.). *Draw.io Flowcharting and Network Diagramming Software*. JGraph Ltd. https://www.draw.io/
+* **Microsoft.** (2024). *Microsoft 365 Business Premium Architecture & Security Documentation*. Microsoft Learn. https://learn.microsoft.com/en-us/microsoft-365/business-premium/
+* **Microsoft.** (2024). *Windows 11 Pro Enterprise Deployment and Active Directory Integration*. Microsoft Learn. https://learn.microsoft.com/en-us/windows/deployment/
+* **PLDT Enterprise.** (2025). *Enterprise Managed Fiber & Corporate Internet Solutions*. PLDT Inc. https://pldtenterprise.com/
+* **Canonical Ltd.** (2024). *Ubuntu Server 24.04 LTS Documentation*. Canonical Ltd. https://ubuntu.com/server/docs
 
