@@ -87,7 +87,7 @@ Suite 502, 5th Floor, Innovation Tech Tower, Barangay San Rafael, San Pablo City
 
 ---
 
-# nterprise Hardware Inventory
+# Enterprise Hardware Inventory
 
 | Asset ID | Hardware | Quantity | Department | Purpose |
 | :--- | :--- | :--- | :--- | :--- |
