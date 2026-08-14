@@ -61,7 +61,6 @@ This project documents the step-by-step deployment, configuration, and verificat
 | **Active Network Interface** | `enp0s3` (NAT Mode) |
 | **Assigned IPv4 Address** | `10.0.2.15/24` |
 | **Enabled Services** | OpenSSH Server (`sshd`) |
-
 ---
 
 ## 6. Verification Results
@@ -100,7 +99,6 @@ Verified DNS resolution and outbound packet transfer via NAT interface.
 ![Task 4 - Test Internet Connectivity](images/W3task4_testinternetconnectivity.png)
 
 ---
-
 ### Task 5 – Update the Server
 Refreshed repository index and updated installed system packages.
 * **Commands:**
@@ -120,9 +118,7 @@ Confirmed that the OpenSSH daemon is active and listening for incoming remote co
 
 ![Task 6 - Verify SSH Service](images/W3task6_verifySSH.png)
 
-
 ## 7. BIOS vs UEFI Highlights
-
 ### Comparison Table
 
 | Feature | Legacy BIOS | UEFI |
@@ -148,7 +144,6 @@ Confirmed that the OpenSSH daemon is active and listening for incoming remote co
   sudo apt upgrade --fix-missing -y
 
 ## 9. Reflection
-
 Building and verifying a headless Linux server environment within Oracle VM VirtualBox provided critical practical insight into real-world system administration. Transitioning from desktop-oriented graphical user interfaces to a pure command-line interface highlights the fundamental trade-offs between user convenience and enterprise system efficiency. Without a GUI overhead, Ubuntu Server operates with minimal system memory utilization, leaving maximum host computing resources available for core services, application containers, and background processing.
 
 Understanding virtual hardware configuration was equally valuable during this activity. Setting up VirtualBox NAT mode demonstrated how guest virtual machines interact with host networking through virtual DHCP and router abstractions. Evaluating partition schemes reinforced the necessity of Logical Volume Management (LVM) in production environments. Unlike legacy static disk partitioning, LVM abstracts physical storage into logical volumes, providing the flexibility to resize file systems dynamically as server storage requirements scale over time.
