@@ -1,7 +1,7 @@
-# Ubuntu Server 26.04 LTS Installation & Verification Guide
+# Week 3: Enterprise Server Deployment and Operating System Installation
 
 **Course / Subject:** System Administration and Maintenance  
-**Prepared by:** Sofia Lorraine  
+**Prepared by:** Sofia Lorraine Gonzaga
 **Hostname:** `server01`  
 **Date:** August 14, 2026  
 
