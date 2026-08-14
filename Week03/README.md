@@ -112,7 +112,7 @@ Refreshed repository index and updated installed system packages.
 Confirmed that the OpenSSH daemon is active and listening for incoming remote connections.
 
 * **Commands:**
- ```bash
+  ```bash
   systemctl status ssh
   Output: Active: active (running)
 
